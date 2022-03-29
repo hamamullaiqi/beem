@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+ 
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+ }
+ .container-fluid {
+     padding: 0;
+ }
+
+ .hero {
+     position: absolute;
+     z-index: -9999;
+     left: 0;
+     background-image: url("../hero/hero2.svg");
+     width: 100%;
+     height: 100vh;
+     background-size: cover;
+     
+ }
+ .inShadow {
+    color: #B1B1B1;
+    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border: none !important;
+ }
+
+ .btn-white {
+     background-color: #fff;
+     color: #000;
+     border: none ;
+ }
+ .btn-white:hover {
+    background-color: rgb(250, 250, 250) ;
+    color: #000;
+}
+.btn-white:focus,
+.btn-white.focus {
+    background-color: #fff;
+     color: #000;
+}
+
+ .btn-blue {
+    background-color: #3A589B;
+    color: #fff;
+    border: none ;
+}
+.btn-blue:hover {
+    background-color: #364f85;
+    color: #fff;
+}
+.btn-blue:focus,
+.btn-blue.focus {
+    background-color: #3A589B;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .hero {
+         position: relative; 
+        z-index: -9999;
+        left: 0;
+        /* right: 0; */
+        background-image: url("../hero/hero-mobile.svg");
+        width: 100%;
+        height: 250px;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        padding: 0;
+    }
+    
+    
+  }
+
