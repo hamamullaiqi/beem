@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const API = axios.create({
-    baseURL: process.env.SERVER_URL || "https://beem-hamamullaiqi.herokuapp.com/api/v1" || "http://localhost:4000/api/v1"
+    baseURL: process.env.REACT_APP_SERVER_URL || "https://beem-hamamullaiqi.herokuapp.com/api/v1" || "http://localhost:4000/api/v1"
 })
 
 export const setAuthToken = (token) => {
