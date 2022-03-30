@@ -3,8 +3,11 @@ import { Row, Col, Container } from "react-bootstrap";
 import Logo from "../assets/logo/logo.svg";
 import Login from "../components/auth/Login";
 import Register from "../components/auth/Register";
+import {observer} from "mobx-react"
 
 function Auth() {
+
+
 
     const [switchAuth, setSwitchAuth] = useState(true)
 
@@ -28,7 +31,7 @@ function Auth() {
 					</Col>
 					<Col lg={6} style={{ backgroundColor: "#FAFBFF", fontWeight: "500" }}>
 
-                        {switchAuth ? <Login handleSwitch={handleSwitch} /> : <Register handleSwitch={handleSwitch} /> }
+                        {switchAuth ? <Login handleSwitch={handleSwitch}  /> : <Register handleSwitch={handleSwitch}  /> }
                         
 						
 					</Col>
@@ -38,4 +41,4 @@ function Auth() {
 	);
 }
 
-export default Auth;
+export default observer(Auth);
